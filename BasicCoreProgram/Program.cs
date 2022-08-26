@@ -8,7 +8,7 @@ namespace BasicCoreProgram
             Console.WriteLine("Welcome to basic core program");
             while (true)
             {
-                Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.power\n 4.harmonic number\n 5.factors\n 6.quotientRemainder\n 7.swap numbers\n 8.evenOdd\n 9.alphabet");
+                Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.power\n 4.harmonic number\n 5.factors\n 6.quotientRemainder\n 7.swap numbers\n 8.evenOdd\n 9.alphabet\n 10.largest number");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -47,6 +47,10 @@ namespace BasicCoreProgram
                     case 9:
                         VowelConsonant vowelConsonant = new VowelConsonant();
                         vowelConsonant.Alphabet();
+                        break;
+                    case 10:
+                        LargestNumber largestNumber = new LargestNumber();
+                        largestNumber.Number();
                         break;
                     default:
                         Console.WriteLine("Select correct option");
