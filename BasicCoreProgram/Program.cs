@@ -8,7 +8,7 @@ namespace BasicCoreProgram
             Console.WriteLine("Welcome to basic core program");
             while (true)
             {
-                Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.power\n 4.harmonic number\n 5.factors\n 6.quotientRemainder\n 7.swap numbers");
+                Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.power\n 4.harmonic number\n 5.factors\n 6.quotientRemainder\n 7.swap numbers\n 8.evenOdd");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -39,6 +39,10 @@ namespace BasicCoreProgram
                     case 7:
                         SwapNumbers swapNumbers = new SwapNumbers();
                         swapNumbers.Swap();
+                        break;
+                    case 8:
+                        EvenOdd evenOdd = new EvenOdd();
+                        evenOdd.Check();
                         break;
                     default:
                         Console.WriteLine("Select correct option");
