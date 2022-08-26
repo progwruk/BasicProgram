@@ -8,7 +8,7 @@ namespace BasicCoreProgram
             Console.WriteLine("Welcome to basic core program");
             while (true)
             {
-                Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.power");
+                Console.WriteLine("Select program\n 1.flip coin\n 2.leap year\n 3.power\n 4.harmonic number");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -23,6 +23,10 @@ namespace BasicCoreProgram
                     case 3:
                         Power power = new Power();
                         power.PowerTwo();
+                        break;
+                    case 4:
+                         HarmonicNumber harmonicNumber = new HarmonicNumber();
+                         harmonicNumber.Number();
                         break;
                     default:
                         Console.WriteLine("Select correct option");
